@@ -1,0 +1,288 @@
+[gd_scene load_steps=11 format=3 uid="uid://h2m6dw00vimb"]
+
+[ext_resource type="Script" uid="uid://bye1ixuihnfct" path="res://Scripts/game.gd" id="1_wrm1d"]
+[ext_resource type="FontFile" uid="uid://bvk25vxrfrgkx" path="res://Assets/Dragontext-Regular.ttf" id="2_3dryh"]
+[ext_resource type="FontFile" uid="uid://cuwn1nn8kfwkn" path="res://Assets/Draconicscript-Regular.ttf" id="3_wowpa"]
+[ext_resource type="Script" uid="uid://dmks3ridslltb" path="res://Scripts/button.gd" id="4_3dryh"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_2poj3"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_i6g32"]
+font = ExtResource("2_3dryh")
+font_size = 30
+
+[sub_resource type="LabelSettings" id="LabelSettings_1l0tm"]
+font = ExtResource("3_wowpa")
+font_size = 90
+
+[sub_resource type="LabelSettings" id="LabelSettings_wrm1d"]
+font = ExtResource("2_3dryh")
+font_size = 90
+
+[sub_resource type="LabelSettings" id="LabelSettings_3dryh"]
+font = ExtResource("3_wowpa")
+font_size = 30
+
+[sub_resource type="LabelSettings" id="LabelSettings_wowpa"]
+font = ExtResource("3_wowpa")
+font_size = 30
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_wrm1d")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="CanvasLayer"]
+self_modulate = Color(0, 0, 0, 1)
+position = Vector2(1424, 858)
+scale = Vector2(-2949.7925, 1847.6266)
+mesh = SubResource("BoxMesh_2poj3")
+
+[node name="RoomDiscription" type="Label" parent="CanvasLayer"]
+visible = false
+offset_left = 84.0
+offset_top = 96.0
+offset_right = 1154.0
+offset_bottom = 176.0
+pivot_offset = Vector2(2714, -5)
+text = "Please answer this question"
+label_settings = SubResource("LabelSettings_i6g32")
+autowrap_mode = 2
+
+[node name="Text" type="Label" parent="CanvasLayer"]
+offset_left = 42.0
+offset_top = 48.0
+offset_right = 1112.0
+offset_bottom = 128.0
+pivot_offset = Vector2(2714, -5)
+text = "Please answer this question"
+label_settings = SubResource("LabelSettings_i6g32")
+autowrap_mode = 2
+
+[node name="Question" type="Label" parent="CanvasLayer"]
+offset_left = 364.0
+offset_top = 239.0
+offset_right = 764.0
+offset_bottom = 330.0
+label_settings = SubResource("LabelSettings_1l0tm")
+horizontal_alignment = 1
+
+[node name="InputLine" type="Label" parent="CanvasLayer"]
+offset_left = 24.0
+offset_top = 510.0
+offset_right = 1120.0
+offset_bottom = 618.0
+label_settings = SubResource("LabelSettings_wrm1d")
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Inventroy" type="HBoxContainer" parent="CanvasLayer"]
+visible = false
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="CanvasLayer/Inventroy"]
+layout_mode = 2
+text = "a
+b
+c
+d
+e
+f
+g
+h
+i
+j
+k
+l
+m
+1
+2
+3
+4
+5"
+label_settings = SubResource("LabelSettings_3dryh")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Inventroy"]
+layout_mode = 2
+
+[node name="LineEdit" type="LineEdit" parent="CanvasLayer/Inventroy/VBoxContainer"]
+custom_minimum_size = Vector2(525, 0)
+layout_mode = 2
+text = "What Is"
+
+[node name="LineEdit2" type="LineEdit" parent="CanvasLayer/Inventroy/VBoxContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+text = "True or False"
+
+[node name="LineEdit3" type="LineEdit" parent="CanvasLayer/Inventroy/VBoxContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+text = "Your Name"
+
+[node name="LineEdit4" type="LineEdit" parent="CanvasLayer/Inventroy/VBoxContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="LineEdit5" type="LineEdit" parent="CanvasLayer/Inventroy/VBoxContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="LineEdit6" type="LineEdit" parent="CanvasLayer/Inventroy/VBoxContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="LineEdit7" type="LineEdit" parent="CanvasLayer/Inventroy/VBoxContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="LineEdit8" type="LineEdit" parent="CanvasLayer/Inventroy/VBoxContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="LineEdit9" type="LineEdit" parent="CanvasLayer/Inventroy/VBoxContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="LineEdit10" type="LineEdit" parent="CanvasLayer/Inventroy/VBoxContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="LineEdit11" type="LineEdit" parent="CanvasLayer/Inventroy/VBoxContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="LineEdit12" type="LineEdit" parent="CanvasLayer/Inventroy/VBoxContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="LineEdit13" type="LineEdit" parent="CanvasLayer/Inventroy/VBoxContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="LineEdit14" type="LineEdit" parent="CanvasLayer/Inventroy/VBoxContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="LineEdit15" type="LineEdit" parent="CanvasLayer/Inventroy/VBoxContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="LineEdit16" type="LineEdit" parent="CanvasLayer/Inventroy/VBoxContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="LineEdit17" type="LineEdit" parent="CanvasLayer/Inventroy/VBoxContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="LineEdit18" type="LineEdit" parent="CanvasLayer/Inventroy/VBoxContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="CanvasLayer/Inventroy"]
+layout_mode = 2
+text = "n
+o
+p
+q
+r
+s
+t
+u
+v
+w
+x
+y
+z
+6
+7
+8
+9
+0"
+label_settings = SubResource("LabelSettings_wowpa")
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="CanvasLayer/Inventroy"]
+layout_mode = 2
+
+[node name="LineEdit" type="LineEdit" parent="CanvasLayer/Inventroy/VBoxContainer2"]
+custom_minimum_size = Vector2(525, 0)
+layout_mode = 2
+
+[node name="LineEdit2" type="LineEdit" parent="CanvasLayer/Inventroy/VBoxContainer2"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="LineEdit3" type="LineEdit" parent="CanvasLayer/Inventroy/VBoxContainer2"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="LineEdit4" type="LineEdit" parent="CanvasLayer/Inventroy/VBoxContainer2"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="LineEdit5" type="LineEdit" parent="CanvasLayer/Inventroy/VBoxContainer2"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="LineEdit6" type="LineEdit" parent="CanvasLayer/Inventroy/VBoxContainer2"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="LineEdit7" type="LineEdit" parent="CanvasLayer/Inventroy/VBoxContainer2"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="LineEdit8" type="LineEdit" parent="CanvasLayer/Inventroy/VBoxContainer2"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="LineEdit9" type="LineEdit" parent="CanvasLayer/Inventroy/VBoxContainer2"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="LineEdit10" type="LineEdit" parent="CanvasLayer/Inventroy/VBoxContainer2"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="LineEdit11" type="LineEdit" parent="CanvasLayer/Inventroy/VBoxContainer2"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="LineEdit12" type="LineEdit" parent="CanvasLayer/Inventroy/VBoxContainer2"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="LineEdit13" type="LineEdit" parent="CanvasLayer/Inventroy/VBoxContainer2"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="LineEdit14" type="LineEdit" parent="CanvasLayer/Inventroy/VBoxContainer2"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="LineEdit15" type="LineEdit" parent="CanvasLayer/Inventroy/VBoxContainer2"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="LineEdit16" type="LineEdit" parent="CanvasLayer/Inventroy/VBoxContainer2"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="LineEdit17" type="LineEdit" parent="CanvasLayer/Inventroy/VBoxContainer2"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="LineEdit18" type="LineEdit" parent="CanvasLayer/Inventroy/VBoxContainer2"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="Button" type="Button" parent="CanvasLayer/Inventroy"]
+layout_mode = 2
+text = "x"
+script = ExtResource("4_3dryh")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[connection signal="pressed" from="CanvasLayer/Inventroy/Button" to="CanvasLayer/Inventroy/Button" method="_on_pressed"]
